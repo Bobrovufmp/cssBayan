@@ -106,4 +106,16 @@ body {
     border-bottom: 0;
 }
 
+@media screen
+and (min-device-width: 320px)
+and (max-device-width: 520px) {
+    .header{
+        min-height: 6em;
+    }
+}
+.image:hover {
+    cursor: none;
+}
+
+
 
