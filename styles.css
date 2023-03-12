@@ -16,74 +16,39 @@
     align-items: center;
 }
 
-/* accordion*/
-
-.firstMemeInputId {
-    opacity: 0;
-}
-.firstMemeInputId:checked ~ .firstMemeImage {
+.memeHeader {
     display: block;
-}
-.firstMemeImage {
-    border: 2px solid green;
-    display: none;
-}
-.firstMemeInputId:hover ~ .firstMemeImage {
-    display: block;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 0;
+    color: black;
 }
 
-.secondMemeInputId {
-    opacity: 0;
-}
-.secondMemeInputId:checked ~ .secondMemeImage {
-    display: block;
-}
-.secondMemeImage {
-    border: 2px solid green;
+.memeInput {
     display: none;
-}
-.secondMemeInputId:hover ~ .secondMemeImage {
-    display: block;
 }
 
-.thirdMemeInputId {
-    opacity: 0;
-}
-.thirdMemeInputId:checked ~ .thirdMemeImage {
-    display: block;
-}
-.thirdMemeImage {
-    border: 2px solid green;
-    display: none;
-}
-.thirdMemeInputId:hover ~ .thirdMemeImage {
-    display: block;
+.memeInput:checked~.memeImage {
+    max-height: 400px;
+    transition: all 1s;
 }
 
-.fourthMemeInputId {
-    opacity: 0;
+.memeImage {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: all 0.5s;
 }
-.fourthMemeInputId:checked ~ .fourthMemeImage {
-    display: block;
+.memeInput:hover~.memeImage {
+    max-height: 400px;
+    transition: all 1s;
 }
-.fourthMemeImage {
-    border: 2px solid green;
-    display: none;
-}
-.fourthMemeInputId:hover ~ .fourthMemeImage {
-    display: block;
-}
-
-.lastMemeInputId {
-        opacity: 0;
-    }
-.lastMemeInputId:checked ~ .lastMemeImage {
-    display: block;
-}
-.lastMemeImage {
-    border: 2px solid green;
-    display: none;
-}
-.lastMemeInputId:hover ~ .lastMemeImage {
-    display: block;
-}
+/*.meme:hover~.memeImage {*/
+/*    max-height: 400px;*/
+/*    transition: all 2s;*/
+/*}*/
+/*.memeHeader:hover~.memeImage {*/
+/*    max-height: 400px;*/
+/*    transition: all 2s;*/
+/*}*/
