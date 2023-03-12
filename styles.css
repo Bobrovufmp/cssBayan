@@ -1,15 +1,25 @@
-.rootComponent {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: cornsilk;
 }
 
 .layoutComponent {
     margin: 0 auto;
-    width: 80vw;
+    cursor: pointer;
+    min-width: 320px;
+    max-width: 600px;
 }
-
 .layoutComponent:hover {
     cursor: pointer;
 }
 
+.layoutComponent:hover~.memeHeader {
+    color: black;
+}
 .memeHeaderBlock {
     display: flex;
     justify-content: space-between;
@@ -20,9 +30,10 @@
     display: block;
     font-size: 1em;
     font-weight: bold;
-    padding: 10px 15px;
     margin: 0;
-    color: black;
+    color: blue;
+    cursor: pointer;
+    padding: 0.5em 0;
 }
 
 .memeInput {
@@ -31,24 +42,68 @@
 
 .memeInput:checked~.memeImage {
     max-height: 400px;
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .memeImage {
     max-height: 0;
     overflow: hidden;
     padding: 0 15px;
-    transition: all 0.5s;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
 }
+
 .memeInput:hover~.memeImage {
     max-height: 400px;
-    transition: all 1s;
+    transition: all 2s;
 }
-/*.meme:hover~.memeImage {*/
-/*    max-height: 400px;*/
-/*    transition: all 2s;*/
-/*}*/
-/*.memeHeader:hover~.memeImage {*/
-/*    max-height: 400px;*/
-/*    transition: all 2s;*/
-/*}*/
+
+.meme {
+    border-bottom: 2px solid darkgrey;
+}
+
+.headerComponent{
+    border-bottom: 3px solid darkgrey;
+}
+
+.h1 {
+    margin: 0.5em 0;
+}
+
+.header {
+    height: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.layoutComponent:hover .memeTitle{
+    color: black;
+    cursor: pointer;
+}
+
+.layoutComponent:hover .crossHeader{
+    opacity: 1;
+}
+.memeTitle{
+    max-width: 30em;
+}
+
+.crossHeader {
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    transform: rotate(-45deg);
+}
+
+.meme:hover .crossHeader{
+    transition: ease-in 0.5s;
+    transform: rotate(-90deg);
+}
+
+.lastMeme{
+    border-bottom: 0;
+}
+
+
