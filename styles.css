@@ -1,0 +1,89 @@
+.rootComponent {
+}
+
+.layoutComponent {
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.layoutComponent:hover {
+    cursor: pointer;
+}
+
+.memeHeaderBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* accordion*/
+
+.firstMemeInputId {
+    opacity: 0;
+}
+.firstMemeInputId:checked ~ .firstMemeImage {
+    display: block;
+}
+.firstMemeImage {
+    border: 2px solid green;
+    display: none;
+}
+.firstMemeInputId:hover ~ .firstMemeImage {
+    display: block;
+}
+
+.secondMemeInputId {
+    opacity: 0;
+}
+.secondMemeInputId:checked ~ .secondMemeImage {
+    display: block;
+}
+.secondMemeImage {
+    border: 2px solid green;
+    display: none;
+}
+.secondMemeInputId:hover ~ .secondMemeImage {
+    display: block;
+}
+
+.thirdMemeInputId {
+    opacity: 0;
+}
+.thirdMemeInputId:checked ~ .thirdMemeImage {
+    display: block;
+}
+.thirdMemeImage {
+    border: 2px solid green;
+    display: none;
+}
+.thirdMemeInputId:hover ~ .thirdMemeImage {
+    display: block;
+}
+
+.fourthMemeInputId {
+    opacity: 0;
+}
+.fourthMemeInputId:checked ~ .fourthMemeImage {
+    display: block;
+}
+.fourthMemeImage {
+    border: 2px solid green;
+    display: none;
+}
+.fourthMemeInputId:hover ~ .fourthMemeImage {
+    display: block;
+}
+
+.lastMemeInputId {
+        opacity: 0;
+    }
+.lastMemeInputId:checked ~ .lastMemeImage {
+    display: block;
+}
+.lastMemeImage {
+    border: 2px solid green;
+    display: none;
+}
+.lastMemeInputId:hover ~ .lastMemeImage {
+    display: block;
+}
